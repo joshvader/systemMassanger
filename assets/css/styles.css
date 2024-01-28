@@ -1,0 +1,205 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --color_h1: black;
+    --color_h2: black;
+    --bg-messages : #fff;
+    --bg-Button : #AA91D2;
+    --color-gray: #bec1bb;
+    --btn-hover: #cdc3e6;
+    --btn-click: #d4dcff;
+    
+    --font_h1 : 'Open Sans', sans-serif;
+    --font_h2 : 'Open Sans', sans-serif;
+    --font_h3 : 'Open Sans', sans-serif;
+
+    --font_span : 'Open Sans', sans-serif;
+
+    --font_p : 'Open Sans', sans-serif;
+    --fsize_p : 13px;
+
+    --fas_icon_color : #919191;
+}
+
+body{
+    background-color: var(--bg-Body);
+}
+
+h1{
+    font-size: 3vh;
+    columns: var(--color_h1);
+    font-family: var(--font_h1);
+}
+
+h2{
+    font-size: 15px;
+    color : var(--color_h2);
+    font-family: var(--font_h2);
+}
+
+h3{
+    font-size: 15px;
+    color : var(--color_h3);
+    font-family: var(--font_h3);
+}
+
+p, span{
+    font-size: 15px;
+    color: rgb(23, 23, 23); 
+    font-family: var(--font_p);
+}
+
+small{
+    color: var(--color_h2);
+    font-size: var(--fsize_p);
+    font-family: var(--font_span);
+}
+
+.fas{
+    color: var(--fas_icon_color);
+}
+
+
+
+.container{
+    margin: auto;
+    width: 100%;
+    height: 100vh;
+    background: azure;
+    display: flex;
+    box-shadow: 0 1px 1px 0 rgba((--shadow-rgb), 0.06), 0 2px 5px 0 rgb((--shadow-rgb), 0.2);
+}
+
+
+.contactos{
+    width: 30%;
+    background: #e8dfdf;
+    overflow: hidden;
+}
+
+.contactosScroll{
+    width: 100%;
+    height: 100%;
+    background: #f4f4f4;
+    overflow: scroll;
+}
+
+.messages{
+    width: 70%;
+    height: auto;
+    background: #D9DADE;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.topContactos{
+    position: static;
+    top: 0;
+}
+
+header{
+    width: 100%;
+    min-height: 60px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    background: #EDEDED;
+    border: 0.5px solid rgba(0,0,0 0.146);
+}
+
+header .name{
+    flex-grow:4;
+    
+}
+
+.btn{
+  border: 1px solid var(--color-gray);
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn button {
+  background-color: var(--bg-Button);
+  white-space: nowrap;
+  padding: 20px 80px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn button:hover {
+    background-color: var(--btn-hover);
+}
+
+.btn button:focus{
+    background-color: var(--btn-hover);
+    color:var(--btn-click);
+}
+
+.iconsHeader{
+    padding: 0px 10px 0px 0px;
+}
+
+header .profile img{
+    width: 37px;
+    margin: 8px;
+    border-radius: 50%;
+}
+
+header .fas {
+  padding: 0px 10px;
+}
+
+.cards{
+    height: 70px;
+    background: #fff;
+    border-bottom: 0.5px solid rgba(0,0,0,0.146);
+    border-right:0px;
+    display: flex;
+    align-items: center;
+    padding: 0px 15px;
+}
+
+.cards:hover {
+    background:rgba(247, 247, 247);
+}
+
+.imgCardprofile{
+    flex-grow: 1;
+}
+
+.card .name {
+    flex-grow: 3;
+    
+}
+
+.cards .hora{
+    margin-left: auto;
+}
+
+.cards .imgCardprofile img{
+    width: 47px;
+    margin: 8px;
+    border-radius: 50%;
+}
+
+.messages{
+    background-color: var(--bg-messages);
+    display: flex;
+    flex: 80%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.messages img{
+  height: 40%
+}
